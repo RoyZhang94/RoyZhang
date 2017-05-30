@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/dark_gary"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/phone_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verification Phone Number"
+        android:textSize="16dp"
+        android:textColor="@color/light_blue"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:gravity="center"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/phone_number_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="15dp"
+        >
+        <controls.ClearEditText
+
+            android:id="@+id/phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:textColorHint="@color/gray_tran"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:drawableRight="@drawable/delete_selctor"
+            android:textCursorDrawable="@drawable/edit_cursor"
+            />
+    </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="5dp"
+            >
+
+            <EditText
+                android:id="@+id/register_password_edit_text"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/next_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/nextstep"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_corner"
+        android:textSize="16dp"
+        android:padding="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.5"
+            android:scaleY="0.5"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我已经阅读并同意"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:id="@+id/service_terms_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/service_terms"
+            android:textSize="12dp"
+            android:textColor="@color/light_blue"/>
+
+    </LinearLayout>
+</LinearLayout>
